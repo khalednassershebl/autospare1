@@ -1,0 +1,40 @@
+.categories-page {
+    padding: 75px 0;
+    .row {
+        padding: 1px 1px;
+    }
+    .col-lg-2,.col-md-3,.col-sm-6 {
+        padding: 0;
+    }
+    .categories-container {
+        margin-top: 50px;
+        .category-card {
+            padding: 15px 15px;
+            position: relative;
+            border: 1px solid #e2e2e2;
+            height: 200px;
+            margin-left: -1px;
+            margin-top: -1px;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                background-color: #fafafa;
+                border-bottom: 1px solid $secondColor;
+            }
+            img {
+                position: absolute;
+                left: 23px;
+                top: 20px;
+                max-width: 100%;
+            }
+            h3 {
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-top: 100px;
+                position: absolute;
+                bottom: 15px;
+                right: 25px;
+                width: 116px;
+            }
+        }
+    }
+}

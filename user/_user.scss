@@ -1,0 +1,298 @@
+.user-info-page {
+    padding: 75px 0;
+    .user-info-sidebar {
+        padding: 20px 25px 5px;
+        border: 1px solid #e1e1e1;
+        .sidebar-line {
+            display: flex;
+            align-items: center;
+            padding: 17px 0;
+            &:hover {
+                h3 {
+                    color: $secondColor;
+                }
+            }
+            svg {
+                margin-left: 15px;
+                height: 20px;
+                width: 20px;
+                fill: #000;
+            }
+            h3 {
+                font-size: 0.8rem;
+                font-weight: 600;
+                margin: 0;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .sidebar-line-logout {
+            display: flex;
+            align-items: center;
+            padding: 17px 0;
+            border-top: 1px solid #e1e1e1;
+            margin-top: 15px;
+            &:hover {
+                h3 {
+                    color: $secondColor;
+                }
+            }
+            svg {
+                margin-left: 15px;
+                height: 20px;
+                width: 20px;
+                fill: $secondColor;
+            }
+            h3 {
+                font-size: 0.8rem;
+                font-weight: 600;
+                margin: 0;
+                transition: all 0.3s ease-in-out;
+                color: $secondColor;
+            }
+        }
+    }
+    .user-info-content {
+        margin-right: 50px;
+        .user-info-content-inputs {
+            margin-top: 25px;
+            .form-group {
+                margin: 15px 0;
+                label {
+                    position: unset;
+                    color: #737373;
+                    margin-bottom: 10px;
+                    display: block;
+                    margin-top: 3px;
+                    margin-right: 3px;
+                }
+                .form-control {
+                    border-radius: 0;
+                    border: 1px solid #e2e2e2;
+                    padding: 10px 20px;
+                    color: $mainColor;
+                    font-size: 0.75rem;
+                    font-weight: 700;
+                    margin: 5px 0;
+                    &::placeholder {
+                        color: #737373;
+                        font-weight: 600;
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+    .address-card {
+        border: 1px solid #e2e2e2;
+        padding: 25px;
+        display: flex;
+        margin: 8px 0;
+        height: 254px;
+        .address-avatar {
+            height: 75px;
+            width: 75px;
+            margin-left: 25px;
+            background: {
+                size: cover;
+                position: center center;
+                repeat: no-repeat;
+                color: $mainColor;
+            }
+        }
+        .address-details {
+            flex: 1;
+            .cat {
+                font-size: 0.65rem;
+                font-weight: 600;
+                padding: 5px 10px;
+                background-color: #dedeea;
+                display: inline-block;
+                border-radius: 50px;
+                margin-bottom: 10px;
+                color: #000;
+            }
+            .cat-main {
+                font-size: 0.65rem;
+                font-weight: 600;
+                padding: 5px 10px;
+                background-color: $secondColor;
+                display: inline-block;
+                border-radius: 50px;
+                margin-bottom: 10px;
+                color: #FFF;
+            }
+            .title {
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin: 0;
+            }
+            .phone {
+                color: #737373;
+                font-size: 0.9rem;
+                font-weight: 600;
+                margin-top: 5px;
+            }
+            .details {
+                color: #737373;
+                font-size: 0.8rem;
+                font-weight: 600;
+                margin-top: 5px;
+            }
+            .address-actions {
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                .edit-btn {
+                    text-decoration: none;
+                    width: 100%;
+                    margin: auto;
+                    color: #000;
+                    display: inline-block;
+                    height: 40px;
+                    border-radius: 0;
+                    font-size: 0.7rem;
+                    font-weight: 700;
+                    text-align: center;
+                    line-height: 40px;
+                    cursor: pointer;
+                    margin-top: 15px;
+                    transition: background-color 0.2s ease-in-out;
+                    background-color: transparent;
+                    border: 0;
+                    margin-left: 10px;
+                    border: 1px solid #e2e2e2;
+                }
+                .del-btn {
+                    text-decoration: none;
+                    width: 100%;
+                    margin: auto;
+                    color: #FFF;
+                    display: inline-block;
+                    height: 40px;
+                    border-radius: 0;
+                    font-size: 0.7rem;
+                    font-weight: 700;
+                    text-align: center;
+                    line-height: 40px;
+                    cursor: pointer;
+                    margin-top: 15px;
+                    transition: background-color 0.3s ease-in-out;
+                    background-color: #db1802;
+                    border: 1px solid #dedeea;
+                }
+            }
+        }
+    }
+    .add-new-card {
+        border: 1px solid #e2e2e2;
+        padding: 25px;
+        display: flex;
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 254px;
+        .add-new-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                height: 25px;
+                width: 25px;
+                margin-left: 10px;
+                fill: $secondColor;
+            }
+            h3 {
+                font-size: 1rem;
+                font-weight: 600;
+                margin: 0;
+                color: #737373;
+            }
+        }
+    }
+    .payment-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #e2e2e2;
+        padding: 25px;
+        margin: 8px 0;
+        .payment-info {
+            display: flex;
+            align-items: center;
+            img {
+                width: 50px;
+                margin-left: 10px;
+                border: 1px solid #e2e2e2;
+                padding: 7px;
+            }
+            .payment-details {
+                h3 {
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                span {
+                    color: #737373;
+                    font-size: 0.7rem;
+                    font-weight: 600;
+                }
+            }
+        }
+        .payment-actions {
+            display: flex;
+            align-items: center;
+            a {
+                color: $mainColor;
+                font-size: 0.7rem;
+                font-weight: 600;
+                svg {
+                    height: 30px;
+                    width: 30px;
+                    fill: #FFF;
+                    background-color: $secondColor;
+                    padding: 7px;
+                    border-radius: 12px;
+                    margin-right: 15px;
+                    display: block;
+                }
+            }
+            .main-card {
+                font-size: 0.65rem;
+                font-weight: 600;
+                padding: 5px 10px;
+                background-color: $mainColor;
+                display: inline-block;
+                border-radius: 50px;
+                color: #FFF;
+            }
+        }
+    }
+    .add-new-card-payment {
+        border: 1px solid #e2e2e2;
+        padding: 25px;
+        display: flex;
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 92px;
+        .add-new-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                height: 25px;
+                width: 25px;
+                margin-left: 10px;
+                fill: $secondColor;
+            }
+            h3 {
+                font-size: 1rem;
+                font-weight: 600;
+                margin: 0;
+                color: #737373;
+            }
+        }
+    }
+}
