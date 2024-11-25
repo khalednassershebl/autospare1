@@ -1,0 +1,241 @@
+.products-list-page {
+    padding: 75px 0;
+    .products-container {
+        .products-list-header {
+            background-color: #f5f5f5;
+            padding: 10px 25px;
+            margin-bottom: 12px;
+            h3 {
+                font-size: 0.85rem;
+                font-weight: 600;
+                margin: 0;
+            }
+            .header-info-filter {
+                border-left: 1px solid #d3d3d3;
+            }
+            .header-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .form-group {
+                    .form-control {
+                        width: 150px;
+                        background-color: unset !important;
+                        border: unset;
+                        border-bottom: 1px solid #d3d3d3;
+                        border-radius: 0;
+                        font-weight: 700;
+                        color: #000;
+                        font-size: 0.75rem;
+                        padding: 7px 5px 7px 20px;
+                    }
+                }
+                svg {
+                    height: 18px;
+                    width: 18px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .products-container-list {
+        .product-card {
+            margin: 8px 0;
+        }
+    }
+    .products-sidebar {
+        margin-top: 8px;
+        margin-left: 12px;
+        .sidebar-section {
+            border: 1px solid #e2e2e2;
+            margin-top: -1px;
+            .sidebar-section-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 20px;
+                background: #f5f5f5;
+                cursor: pointer;
+                border-bottom: 1px solid #e2e2e2;
+                h3 {
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                svg {
+                    height: 14px;
+                    width: 14px;
+                    cursor: pointer;
+                }
+            }
+            .sidebar-section-content {
+                padding: 15px 20px;
+                .filter-line {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0;
+                    p {
+                        margin: 0 15px 0 0;
+                        font-size: 0.75rem;
+                        font-weight: 600;
+                        span {
+                            color: #a5a5a5;
+                            font-size: 0.65rem;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .filter-line-price {
+                    direction: ltr;
+                    text-align: left;
+                      .price-input {
+                        width: 100%;
+                        display: flex;
+                        margin: 0 0 35px;
+                      }
+                      .price-input .field {
+                        display: grid;
+                        width: 100%;
+                        height: 45px;
+                        align-items: center;
+                      }
+                      .price-input .field span {
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        text-align: center;
+                        width: 100%;
+                      }
+                      .field input {
+                        width: 100%;
+                        height: 100%;
+                        outline: none;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        font-family: "Archivo", sans-serif;
+                        margin-left: 0;
+                        border-radius: 5px;
+                        text-align: center;
+                        border: unset;
+                        -moz-appearance: textfield;
+                      }
+                      input[type="number"]::-webkit-outer-spin-button,
+                      input[type="number"]::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                      }
+                      .price-input .separator {
+                        width: 50px;
+                        display: flex;
+                        font-size: 19px;
+                        align-items: center;
+                        justify-content: center;
+                        display: none;
+                      }
+                      .slider {
+                        height: 5px;
+                        position: relative;
+                        background: #ddd;
+                        border-radius: 5px;
+                      }
+                      .slider .progress {
+                        height: 100%;
+                        left: 25%;
+                        right: 25%;
+                        position: absolute;
+                        border-radius: 5px;
+                        background: $secondColor;
+                      }
+                      .range-input {
+                        position: relative;
+                      }
+                      .range-input input {
+                        position: absolute;
+                        width: 100%;
+                        height: 5px;
+                        top: -5px;
+                        background: none;
+                        pointer-events: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                      }
+                      input[type="range"]::-webkit-slider-thumb {
+                        height: 17px;
+                        width: 17px;
+                        border-radius: 50%;
+                        background: $secondColor;
+                        pointer-events: auto;
+                        -webkit-appearance: none;
+                        box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+                        cursor: pointer;
+                      }
+                      input[type="range"]::-moz-range-thumb {
+                        height: 17px;
+                        width: 17px;
+                        border: none;
+                        border-radius: 50%;
+                        background: $secondColor;
+                        pointer-events: auto;
+                        -moz-appearance: none;
+                        box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+                        cursor: pointer;
+                      }
+                }
+
+                .checkbox-wrapper-43 input {
+                    display: none;
+                    visibility: hidden;
+                  }
+                
+                  .checkbox-wrapper-43 label {
+                    display: inline-block;
+                  }
+                
+                  .checkbox-wrapper-43 .check {
+                    cursor: pointer;
+                    position: relative;
+                    margin: auto;
+                    width: 18px;
+                    height: 18px;
+                    -webkit-tap-highlight-color: transparent;
+                    transform: translate3d(0, 0, 0);
+                  }
+                  .checkbox-wrapper-43 .check svg {
+                    position: relative;
+                    z-index: 1;
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke: #c8ccd4;
+                    stroke-width: 1.5;
+                    transform: translate3d(0, 0, 0);
+                    transition: all 0.2s ease;
+                  }
+                  .checkbox-wrapper-43 .check svg path {
+                    stroke-dasharray: 60;
+                    stroke-dashoffset: 0;
+                  }
+                  .checkbox-wrapper-43 .check svg polyline {
+                    stroke-dasharray: 22;
+                    stroke-dashoffset: 66;
+                  }
+                  .checkbox-wrapper-43 .check:hover:before {
+                    opacity: 1;
+                  }
+                  .checkbox-wrapper-43 .check:hover svg {
+                    stroke: $secondColor;
+                  }
+                  .checkbox-wrapper-43 input:checked + .check svg {
+                    stroke: $secondColor;
+                  }
+                  .checkbox-wrapper-43 input:checked + .check svg path {
+                    stroke-dashoffset: 60;
+                    transition: all 0.3s linear;
+                  }
+                  .checkbox-wrapper-43 input:checked + .check svg polyline {
+                    stroke-dashoffset: 42;
+                    transition: all 0.2s linear;
+                    transition-delay: 0.15s;
+                  }
+            }
+        }
+    }
+}
