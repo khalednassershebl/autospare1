@@ -306,7 +306,7 @@ margin-right: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px;
+        padding: 15px 15px 5px 15px;
         height: 59px;
         .products-fav {
             svg {
@@ -336,20 +336,20 @@ margin-right: auto;
         justify-content: center;
         img {
             max-width: 100%;
-            height: 250px;
+            height: 150px;
             margin: auto;
         }
     }
     .product-info {
-        padding: 20px;
+        padding: 20px 20px 10px 20px;
         .product-category {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             font-weight: 600;
             margin-bottom: 5px;
             color: #595959;
         }
         h3 {
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 600;
             color: $mainColor;
             line-height: 25px;
@@ -360,16 +360,16 @@ margin-right: auto;
             align-items: center;
             font-family: "Archivo", sans-serif;
             .current {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
                 font-weight: 600;
                 span {
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                 }
             }
             .discount {
                 color: #272727;
                 margin-right: 10px;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 font-weight: 500;
                 position: relative;
                 &:after {
@@ -393,10 +393,10 @@ margin-right: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 25px;
+        padding: 20px 25px;
         background-color: #F5F5F5;
         span {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: 600;
         }
         svg {
