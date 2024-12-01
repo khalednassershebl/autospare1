@@ -2129,6 +2129,29 @@ footer .copyrights .copyrights-container .terms-info span {
   transition-delay: 0.15s;
 }
 
+.load-more-btn a {
+  text-decoration: none;
+  width: 200px;
+  margin: 25px auto;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  border-radius: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #f74239;
+  border: 0;
+  padding: 5px 15px;
+}
+.load-more-btn a:hover {
+  background-color: #000034;
+  color: #FFF;
+}
+
 .categories-page {
   padding: 75px 0;
 }
@@ -2585,6 +2608,98 @@ footer .copyrights .copyrights-container .terms-info span {
 .cart-page .checkout .sidebar-box .totals-line .price-title-small .currency {
   color: #f74239;
   margin-left: 5px;
+}
+.cart-page .checkout .sidebar-box .discount {
+  padding: 5px 0 20px 0;
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions {
+  display: flex;
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  margin: auto;
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form .form-group {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .cart-page .checkout .sidebar-box .discount .promo-line-actions form .form-group {
+    margin: 25px 10px 0 0;
+  }
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form .form-group .form-control {
+  height: 45px;
+  padding: 0 18px;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  color: #3e3f5e;
+  transition: border-color 0.2s ease-in-out;
+  width: 100%;
+  border-radius: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form .form-group .form-control:focus {
+  border-color: #f74239;
+  box-shadow: none;
+  outline: none;
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form .create-account-btn {
+  text-decoration: none;
+  width: 100px;
+  margin: auto 0px auto 0;
+  color: #FFF;
+  display: inline-block;
+  height: 45px;
+  border-radius: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #f74239;
+  border: 0;
+}
+@media (max-width: 767.98px) {
+  .cart-page .checkout .sidebar-box .discount .promo-line-actions form .create-account-btn {
+    margin: auto 15px 0 auto;
+  }
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form .create-account-btn svg {
+  height: 18px;
+  margin-left: 4px;
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form .create-account-btn svg path {
+  fill: #FFF;
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form .create-account-btn:hover {
+  background-color: #000034;
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form p.text {
+  margin-top: 30px;
+  font-size: 0.875rem;
+  line-height: 1.7142857143em;
+  font-weight: 500;
+  color: #3e3f5e;
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form p.text a {
+  text-decoration: none;
+  color: #6956e5;
+  font-weight: 700;
+}
+.cart-page .checkout .sidebar-box .discount .promo-line-actions form .active-input label {
+  background: #FFF;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  top: -6px;
+  right: 12px;
 }
 .cart-page .checkout .sidebar-box .pay-btn {
   text-decoration: none;
@@ -4095,6 +4210,29 @@ footer .copyrights .copyrights-container .terms-info span {
   color: #FFF;
   padding: 12px 20px;
   text-align: center;
+}
+
+.save-btn button {
+  text-decoration: none;
+  width: 100px;
+  margin: 25px 0 0 auto;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  border-radius: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #f74239;
+  border: 0;
+  padding: 5px 15px;
+}
+.save-btn button:hover {
+  background-color: #000034;
+  color: #FFF;
 }
 
 * {
