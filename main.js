@@ -36,13 +36,14 @@ $(".close-overlay").on("click", function () {
   $(".contact-container").removeClass("open-popup");
 });
 
-
-
-
-
 // Toggle Language
 if ($("html").attr("lang") == "en") {
   $(".page-lang").text("العربية");
 } else {
   $(".page-lang").text("English");
 }
+
+// Search Icon Toggle
+$(".search-icon svg").on("click", function () {
+  $(this).parent().toggleClass("show-search");
+});
