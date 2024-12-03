@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../main.css" />
 
     <!-- Page Title & Icon -->
-    <title>Register</title>
+    <title>wishlist</title>
     <link rel="shortcut icon" href="../assets/images/icon.png" />
 </head>
 
@@ -238,87 +238,226 @@
             </nav>
         </header>
 
-        <div class="register-page">
-            <div class="register-overlay"></div>
+        <div class="user-info-page">
+            <div class="container">
 
-            <div class="row align-items-center">
+                <div class="row">
 
+                    <div class="col-lg-3">
+                        <div class="user-info-sidebar">
 
-                <div class="form-container">
-                    <div class="form-card">
-                        <div class="form-box-title">تسجيل الدخول</div>
+                            <a href="#" class="sidebar-line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M11.9999 17C15.6623 17 18.8649 18.5751 20.607 20.9247L18.765 21.796C17.3473 20.1157 14.8473 19 11.9999 19C9.15248 19 6.65252 20.1157 5.23479 21.796L3.39355 20.9238C5.13576 18.5747 8.33796 17 11.9999 17ZM11.9999 2C14.7613 2 16.9999 4.23858 16.9999 7V10C16.9999 12.6888 14.8776 14.8818 12.2168 14.9954L11.9999 15C9.23847 15 6.9999 12.7614 6.9999 10V7C6.9999 4.31125 9.1222 2.11818 11.783 2.00462L11.9999 2ZM11.9999 4C10.4022 4 9.09623 5.24892 9.00499 6.82373L8.9999 7V10C8.9999 11.6569 10.343 13 11.9999 13C13.5976 13 14.9036 11.7511 14.9948 10.1763L14.9999 10V7C14.9999 5.34315 13.6567 4 11.9999 4Z">
+                                    </path>
+                                </svg>
+                                <h3>المعلومات الشخصية</h3>
+                            </a>
 
-                        <div class="register-by">
-                            <span>التسجيل بـ</span>
-                            <div class="register-by-container">
-                                <div class="register-type active">الإيميل</div>
-                                <div class="register-type">رقم التليفون</div>
-                            </div>
-                        </div>
+                            <a href="#" class="sidebar-line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M13.0607 8.11097L14.4749 9.52518C17.2086 12.2589 17.2086 16.691 14.4749 19.4247L14.1214 19.7782C11.3877 22.5119 6.95555 22.5119 4.22188 19.7782C1.48821 17.0446 1.48821 12.6124 4.22188 9.87874L5.6361 11.293C3.68348 13.2456 3.68348 16.4114 5.6361 18.364C7.58872 20.3166 10.7545 20.3166 12.7072 18.364L13.0607 18.0105C15.0133 16.0578 15.0133 12.892 13.0607 10.9394L11.6465 9.52518L13.0607 8.11097ZM19.7782 14.1214L18.364 12.7072C20.3166 10.7545 20.3166 7.58872 18.364 5.6361C16.4114 3.68348 13.2456 3.68348 11.293 5.6361L10.9394 5.98965C8.98678 7.94227 8.98678 11.1081 10.9394 13.0607L12.3536 14.4749L10.9394 15.8891L9.52518 14.4749C6.79151 11.7413 6.79151 7.30911 9.52518 4.57544L9.87874 4.22188C12.6124 1.48821 17.0446 1.48821 19.7782 4.22188C22.5119 6.95555 22.5119 11.3877 19.7782 14.1214Z">
+                                    </path>
+                                </svg>
+                                <h3>عناوين الشحن</h3>
+                            </a>
 
-                        <form action="" class="form">
+                            <a href="#" class="sidebar-line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M3.00488 2.99979H21.0049C21.5572 2.99979 22.0049 3.4475 22.0049 3.99979V19.9998C22.0049 20.5521 21.5572 20.9998 21.0049 20.9998H3.00488C2.4526 20.9998 2.00488 20.5521 2.00488 19.9998V3.99979C2.00488 3.4475 2.4526 2.99979 3.00488 2.99979ZM20.0049 10.9998H4.00488V18.9998H20.0049V10.9998ZM20.0049 8.99979V4.99979H4.00488V8.99979H20.0049ZM14.0049 14.9998H18.0049V16.9998H14.0049V14.9998Z">
+                                    </path>
+                                </svg>
+                                <h3>وسائل الدفع</h3>
+                            </a>
 
-                            <div class="row">
+                            <a href="#" class="sidebar-line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12H4C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C9.25022 4 6.82447 5.38734 5.38451 7.50024L8 7.5V9.5H2V3.5H4L3.99989 5.99918C5.82434 3.57075 8.72873 2 12 2ZM13 7L12.9998 11.585L16.2426 14.8284L14.8284 16.2426L10.9998 12.413L11 7H13Z">
+                                    </path>
+                                </svg>
+                                <h3>سجل الطلبات</h3>
+                            </a>
 
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="البريد الإلكتروني">
-                                    </div>
-                                </div>
+                            <a href="#" class="sidebar-line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7 10H20C20.5523 10 21 10.4477 21 11V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V11C3 10.4477 3.44772 10 4 10H5V9C5 5.13401 8.13401 2 12 2C14.7405 2 17.1131 3.5748 18.2624 5.86882L16.4731 6.76344C15.6522 5.12486 13.9575 4 12 4C9.23858 4 7 6.23858 7 9V10ZM5 12V20H19V12H5ZM10 15H14V17H10V15Z">
+                                    </path>
+                                </svg>
+                                <h3>تغيير الباسورد</h3>
+                            </a>
 
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="الباسورد">
-                                    </div>
-                                </div>
+                            <a href="#" class="sidebar-line">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M17.5 2.47363L23 11.9999L17.5 21.5262H6.5L1 11.9999L6.5 2.47363H17.5ZM16.3453 4.47363H7.6547L3.3094 11.9999L7.6547 19.5262H16.3453L20.6906 11.9999L16.3453 4.47363ZM8.63398 8.16979L10.366 7.16979L15.366 15.83L13.634 16.83L8.63398 8.16979Z">
+                                    </path>
+                                </svg>
+                                <h3>تفضيلات المستخدم</h3>
+                            </a>
 
-                            </div>
-
-                            <button type="submit" class="create-account-btn">تسجيل الدخول</button>
-
-                        </form>
-
-                        <div class="register-social">
-
-                            <div class="br">
-                                <span>او التسجيل عن طريق</span>
-                            </div>
-
-                            <div class="register-social-icons">
-                                <a href="#" class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M12 11H20.5329C20.5769 11.3847 20.6 11.7792 20.6 12.1837C20.6 14.9184 19.6204 17.2204 17.9224 18.7837C16.4367 20.1551 14.404 20.9592 11.9796 20.9592C8.46933 20.9592 5.43266 18.947 3.9551 16.0123C3.34695 14.8 3 13.4286 3 11.9796C3 10.5306 3.34695 9.1592 3.9551 7.94698C5.43266 5.01226 8.46933 3 11.9796 3C14.4 3 16.4326 3.88983 17.9877 5.33878L16.5255 6.80101C15.3682 5.68153 13.8028 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.5265 19 18.1443 16.3923 18.577 13H12V11Z">
-                                        </path>
-                                    </svg>
-                                    جوجل
-                                </a>
-                                <a href="#" class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M15.778 8.20793C15.3053 8.1711 14.7974 8.28434 14.0197 8.58067C14.085 8.55577 13.2775 8.87173 13.0511 8.95077C12.5494 9.12593 12.1364 9.22198 11.6734 9.22198C11.2151 9.22198 10.7925 9.13042 10.3078 8.96683C10.1524 8.91441 9.99616 8.8564 9.80283 8.7809C9.71993 8.74852 9.41997 8.62947 9.3544 8.60379C8.70626 8.34996 8.34154 8.25434 8.03885 8.26181C6.88626 8.2765 5.79557 8.9421 5.16246 10.0442C3.87037 12.2875 4.58583 16.3428 6.47459 19.075C7.4802 20.5189 8.03062 21.035 8.25199 21.0279C8.4743 21.0183 8.63777 20.9713 9.03567 20.8026C9.11485 20.7689 9.11485 20.7689 9.202 20.7317C10.2077 20.3032 10.9118 20.114 11.9734 20.114C12.9944 20.114 13.6763 20.2997 14.6416 20.7159C14.7302 20.7542 14.7302 20.7542 14.8097 20.7884C15.2074 20.9588 15.3509 20.9962 15.6016 20.9902C15.9591 20.9846 16.4003 20.5726 17.3791 19.1362C17.6471 18.7447 17.884 18.3333 18.0895 17.9168C17.9573 17.8077 17.826 17.6917 17.6975 17.5693C16.4086 16.3408 15.6114 14.6845 15.5895 12.6391C15.5756 11.0186 16.1057 9.61487 16.999 8.45797C16.6293 8.3142 16.2216 8.23805 15.778 8.20793ZM15.9334 6.21398C16.6414 6.26198 18.6694 6.47798 19.9894 8.40998C19.8814 8.46998 17.5654 9.81397 17.5894 12.622C17.6254 15.982 20.5294 17.098 20.5654 17.11C20.5414 17.194 20.0974 18.706 19.0294 20.266C18.1054 21.622 17.1454 22.966 15.6334 22.99C14.1454 23.026 13.6654 22.114 11.9734 22.114C10.2694 22.114 9.74138 22.966 8.33738 23.026C6.87338 23.074 5.76938 21.562 4.83338 20.218C2.92538 17.458 1.47338 12.442 3.42938 9.04597C4.40138 7.35397 6.12938 6.28598 8.01338 6.26198C9.44138 6.22598 10.7974 7.22198 11.6734 7.22198C12.5374 7.22198 14.0854 6.06998 15.9334 6.21398ZM14.7934 4.38998C14.0134 5.32598 12.7414 6.05798 11.5054 5.96198C11.3374 4.68998 11.9614 3.35798 12.6814 2.52998C13.4854 1.59398 14.8294 0.897976 15.9454 0.849976C16.0894 2.14598 15.5734 3.45398 14.7934 4.38998Z">
-                                        </path>
-                                    </svg>
-                                    أبل
-                                </a>
-                                <a href="#" class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z">
-                                        </path>
-                                    </svg>
-                                    فيسبوك
-                                </a>
-                            </div>
+                            <a href="#" class="sidebar-line sidebar-line-logout">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M5 11H13V13H5V16L0 12L5 8V11ZM3.99927 18H6.70835C8.11862 19.2447 9.97111 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C9.97111 4 8.11862 4.75527 6.70835 6H3.99927C5.82368 3.57111 8.72836 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C8.72836 22 5.82368 20.4289 3.99927 18Z">
+                                    </path>
+                                </svg>
+                                <h3>تسجيل الخروج</h3>
+                            </a>
 
                         </div>
-
-                        <span class="login-link"><a href="../register/login.html">انشاء حساب جديد ؟</a></span>
                     </div>
+
+                    <div class="col-lg-9">
+                        <div class="user-info-content">
+
+                            <div class="section-header">
+                                <div class="section-header-info">
+                                    <h3>قائمة المفضلة</h3>
+                                    <p>تصفح المنتجات المضافة الى قائمة المفضلة</p>
+                                </div>
+                            </div>
+
+                            <div class="shop-cards">
+
+                                <div class="shop-card">
+                                    <div class="dropdown-box-list-item">
+
+                                        <div class="cart-item-preview">
+                                            <a class="cart-item-preview-image">
+                                                <img src="../assets/images/pro1.jpg" alt="">
+                                            </a>
+                                            <div class="cart-item-preview-text">المولدات</div>
+                                            <div class="cart-item-preview-title">دليل حزام التوقيت بكرة الانحراف من
+                                                Masell سلسلة 500Pro</div>
+                                        </div>
+
+                                        <div class="item-price">
+                                            <h6>12.00<span class="highlighted">L.E</span></h6>
+                                        </div>
+
+                                        <div class="item-action reorder">
+                                            <a href="#" class="">أضف للسلة</a>
+                                            <a href="#" class="remove">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                    fill="currentColor">
+                                                    <path
+                                                        d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 4V6H15V4H9Z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="shop-card">
+                                    <div class="dropdown-box-list-item">
+
+                                        <div class="cart-item-preview">
+                                            <a class="cart-item-preview-image">
+                                                <img src="../assets/images/pro2.jpg" alt="">
+                                            </a>
+                                            <div class="cart-item-preview-text">المولدات</div>
+                                            <div class="cart-item-preview-title">فرامل قرصية HKS Pro من سلسلة 400 بلون
+                                                الكرز اللامع</div>
+                                        </div>
+
+                                        <div class="item-price">
+                                            <h6>56.00<span class="highlighted">L.E</span></h6>
+                                        </div>
+
+                                        <div class="item-action reorder">
+                                            <a href="#" class="">أضف للسلة</a>
+                                            <a href="#" class="remove">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                    fill="currentColor">
+                                                    <path
+                                                        d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 4V6H15V4H9Z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="shop-card">
+                                    <div class="dropdown-box-list-item">
+
+                                        <div class="cart-item-preview">
+                                            <a class="cart-item-preview-image">
+                                                <img src="../assets/images/pro3.jpg" alt="">
+                                            </a>
+                                            <div class="cart-item-preview-text">المولدات</div>
+                                            <div class="cart-item-preview-title">مجموع الطاقات الكوارتز INEO الطاقة
+                                                النقية</div>
+                                        </div>
+
+                                        <div class="item-price">
+                                            <h6>17.00<span class="highlighted">L.E</span></h6>
+                                        </div>
+
+                                        <div class="item-action reorder">
+                                            <a href="#" class="">أضف للسلة</a>
+                                            <a href="#" class="remove">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                    fill="currentColor">
+                                                    <path
+                                                        d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 4V6H15V4H9Z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="shop-card">
+                                    <div class="dropdown-box-list-item">
+
+                                        <div class="cart-item-preview">
+                                            <a class="cart-item-preview-image">
+                                                <img src="../assets/images/pro4.jpg" alt="">
+                                            </a>
+                                            <div class="cart-item-preview-text">المولدات</div>
+                                            <div class="cart-item-preview-title">طقم الفرامل الرياضية HKS Pro GT III-RS
+                                            </div>
+                                        </div>
+
+                                        <div class="item-price">
+                                            <h6>134.00<span class="highlighted">L.E</span></h6>
+                                        </div>
+
+                                        <div class="item-action reorder">
+                                            <a href="#" class="">أضف للسلة</a>
+                                            <a href="#" class="remove">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                    fill="currentColor">
+                                                    <path
+                                                        d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 4V6H15V4H9Z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-
         </div>
 
     </div>
