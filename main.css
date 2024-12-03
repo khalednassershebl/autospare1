@@ -5324,10 +5324,9 @@ a:hover {
   width: 100%;
 }
 .big-banner .big-banner-info .swiper-slide-info {
-  text-align: right;
   position: relative;
   z-index: 2;
-  width: 50%;
+  text-align: center;
 }
 .big-banner .big-banner-info .swiper-slide-info .pretitle {
   color: #FFF;
@@ -5337,12 +5336,15 @@ a:hover {
   color: #FFF;
   font-size: 4rem;
   font-weight: 700;
-  width: 70%;
+  width: 50%;
+  text-align: center;
+  margin: auto;
 }
 .big-banner .big-banner-info .swiper-slide-info .product-price {
   display: flex;
   align-items: center;
   font-family: "Archivo", sans-serif;
+  justify-content: center;
   margin: 25px 0;
 }
 .big-banner .big-banner-info .swiper-slide-info .product-price .current {
@@ -5367,12 +5369,19 @@ a:hover {
   width: 100%;
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translate(0%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #FFF;
 }
 .big-banner .big-banner-info .swiper-slide-info .product-price .discount span {
   font-size: 0.9rem;
+}
+.big-banner .big-banner-info .swiper-slide-info .swiper-slide-action {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .big-banner .big-banner-info .swiper-slide-info .swiper-slide-action a {
   height: 50px;

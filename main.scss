@@ -445,10 +445,9 @@ margin-right: auto;
         z-index: 5;
         width: 100%;
         .swiper-slide-info {
-            text-align: right;
             position: relative;
             z-index: 2;
-            width: 50%;
+            text-align: center;
             .pretitle {
                 color: #FFF;
                 font-weight: 600;
@@ -457,12 +456,15 @@ margin-right: auto;
                 color: #FFF;
                 font-size: 4rem;
                 font-weight: 700;
-                width: 70%;
+                width: 50%;
+                text-align: center;
+                margin: auto;
             }
             .product-price {
                 display: flex;
                 align-items: center;
                 font-family: "Archivo", sans-serif;
+                justify-content: center;
                 margin: 25px 0;
                 .current {
                     font-size: 2.75rem;
@@ -485,8 +487,8 @@ margin-right: auto;
                         width: 100%;
                         position: absolute;
                         top: 50%;
-                        left: 0;
-                        transform: translate(0%, -50%);
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                         background-color: #FFF;
                     }
                     span {
@@ -495,6 +497,11 @@ margin-right: auto;
                 }
             }
             .swiper-slide-action {
+                text-align: center;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 a {
                     height: 50px;
                     width: 150px;
