@@ -273,3 +273,67 @@
         }
     }
 }
+
+// OTP PAGE
+ .form-box-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #737373;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 50px;
+ }
+  .otp-input-fields{
+    margin: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    direction: ltr;
+    
+    input{
+      height: 40px;
+      width: 40px;
+      background-color: transparent;
+      border-radius: 0;
+      border: 1px solid #e2e2e2;
+      text-align: center;
+      outline: none;
+      font-size: 16px;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+  
+      /* Firefox */
+      &[type=number] {
+        -moz-appearance: textfield;
+      }
+      &:focus{
+            border-width: 2px;
+            border-color: darken($secondColor, 5%);
+            font-size: 20px;
+      }
+    }
+  }
+  
+  .result{
+    max-width: 400px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+    p{
+      font-size: 24px;
+      font-family: 'Antonio', sans-serif;
+      opacity: 1;
+      transition: color 0.5s ease;
+      &._ok{
+        color: green;
+      }
+      &._notok{
+        color: red;
+        border-radius: 3px;
+      }
+    }
+  }
